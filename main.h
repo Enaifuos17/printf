@@ -36,7 +36,7 @@
  *
  * @zero_flag: on if _flag specified
  * @minus_flag: on if _flag specified
- */ 
+ */
 typedef struct parameters
 {
 	unsigned int unsign		: 1;
@@ -66,7 +66,7 @@ typedef struct parameters
 typedef struct specifier
 {
 	char *specifier;
-	int (*f) (va_list, params_t *);
+	int (*f)(va_list, params_t *);
 } specifier_t;
 
 /* _put.c */
