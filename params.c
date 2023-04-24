@@ -27,4 +27,5 @@ void init_params(params_t *params, va_list ap)
 	params->zero_flag = 0;
 
 	params->minus_flag = 0;
+	(void)ap;
 }
