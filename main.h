@@ -11,6 +11,8 @@
 #define OUTPUT_BUF_SIZE 1024
 #define BUF_FLUSH -1
 
+#define FIELD_BUF_SIZE 50
+
 #define NULL_STRING "(null)"
 
 /* 10 zeros FOR the ten vars in parameters struct */
@@ -74,7 +76,7 @@ int _puts(char *str);
 int _putchar(int c);
 
 /* specifier.c */
-int (*get_specifier(char *s)) (va_list ap, params_t *params);
+int (*get_specifier(char *s))(va_list ap, params_t *params);
 int get_print_func(char *s, va_list ap, params_t *params);
 int get_flag(char *s, params_t *params);
 int get_modifier(char *s, params_t *params);
